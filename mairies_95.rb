@@ -29,7 +29,7 @@ def get_all_the_urls_of_townhalls_95
 			url = "http://annuaire-des-mairies.com" + lien["href"][1..-1]
 				#nom de la ville
 				town = lien.text
-				# l'adresse mail de la mairie
+				# l'adresse mail de la mairie grace à la premiere méthode qu'on a créé
 				email = get_the_email_of_a_townhal_from_its_webpage(url_townhal)
 				# Le hash s'il veux bien fonctionner car je détesteeeeeee les hash
 				hash_town_and_email = {:name => town, :email => email}
